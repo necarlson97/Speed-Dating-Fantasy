@@ -33,19 +33,20 @@ public class CharacterCEOScript : MonoBehaviour {
 
     void FillRolodex() {
         // TODO create the neccicary entries for the rolodex
-        var parent = GameObject.Find("Rolodex Scroll").transform;
+        var parent = GameObject.Find("Scroll Content").transform;
 
         int i=0;
-        float y=0f;
+        float y=330f; // Start near top of rolodex
         foreach(var kv in allCharacters) {
             // The x position is either left, middle, or center
             var x = 0f;
             if (i%3==0) x = -300;
-            else if (x%3==2) x = 300;
+            else if (i%3==2) x = 300;
 
             var character = kv.Value;
             var go = GameObject.Instantiate(
-                rolodexEntry, new Vector3(x, y, 0), Quaternion.identity, parent);
+                rolodexEntry, parent.position, Quaternion.identity, parent);
+            go.transform.localPosition =  new Vector3(x, y, 0);
             go.transform.Find("Portrait").GetComponent<RawImage>().texture = character.portrait;
             go.transform.Find("Name").GetComponent<Text>().text = character.name;
             go.transform.Find("Personality").GetComponent<Text>().text = character.personality;
@@ -53,7 +54,7 @@ public class CharacterCEOScript : MonoBehaviour {
             go.transform.Find("Job").GetComponent<Text>().text = character.job;
 
             // Move to next row
-            if (x%3==2) y += 110;
+            if (i%3==2) y -= 110;
 
             i++;
         }
@@ -81,11 +82,14 @@ public class CharacterCEOScript : MonoBehaviour {
     public static Texture2D LoadPortrait(string fileName) {
         // Load this character's portrait from the portraits folder
         // TODO
-        return Resources.Load<Texture2D>("portraits/dwarf_merchant_shy");
+        return Resources.Load<Texture2D>("portraits/"+fileName);
     }
     public static string LoadBio(string fileName) {
         // Load this character's bio from the bios folder
-        return "test bio";
+        Debug.Log("bio/"+fileName);
+        // TODO 
+        return "test";
+        // return Resources.Load<TextAsset>("bio/"+fileName).text;
     }
 
     void Update() {

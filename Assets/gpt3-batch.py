@@ -43,7 +43,7 @@ personalities = [
   "Serious"
 ]
 
-openai.api_key = "sk-ttZdzQeBDYIFMdutO9JBps1ScxlHyVLvYy9tmI7u"
+openai.api_key = "OPEN-AI-KEY"
 
 
 for species, species_prompt in species.items():
