@@ -17,7 +17,6 @@ public class SettingsScript : MonoBehaviour {
         // the sfx and music floats here
         Debug.Log(FindObjectsOfType<AudioSource>());
         foreach(var source in FindObjectsOfType<AudioSource>()) {
-            Debug.Log("Source: "+source.name);
             if (source.name == "Music") source.volume = music;
             else source.volume = sfx;
         }

@@ -34,7 +34,7 @@ public class CameraScript : MonoBehaviour {
             GoTo("Right");
         } else if (Input.GetKeyDown("6")) {
             GoTo("Up Left");
-        } else if (Input.GetKeyDown("6")) {
+        } else if (Input.GetKeyDown("7")) {
             GoTo("Up Right");
         }
     }

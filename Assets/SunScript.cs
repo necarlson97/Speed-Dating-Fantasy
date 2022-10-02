@@ -44,6 +44,7 @@ public class SunScript : MonoBehaviour {
         startTime = -1;
         target = new Vector3(-1, 16,11);
 
+        PlayPartilce("Reset Sun");
         if (softReset) StartTimer();
     }
 
@@ -86,5 +87,10 @@ public class SunScript : MonoBehaviour {
             
         var cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         cam.backgroundColor = gradient.Evaluate(ratioElapsed);
+    }
+
+    public void PlayPartilce(string p) {
+        // Find the child particle system with the name 'p'
+        transform.Find(p).GetComponent<ParticleSystem>().Play();
     }
 }

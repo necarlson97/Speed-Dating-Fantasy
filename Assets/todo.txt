@@ -1,18 +1,18 @@
 Todo:
-Enemies maybe change direction after certian # of seconds
-Oh! Need enemies to get faster over time (or arena to spawn faster ones)
 Title page, cover art - video?
-Make sure music loops
-Replace any audio or visual assets with human made?
-how-to is ugly
-can we get better outlines?
 scrolling for rolodex
 
 
 Later:
+Enemies maybe change direction after certian # of seconds
+Oh! Need enemies to get faster over time (or arena to spawn faster ones)
+Replace any audio or visual assets with human made?
+how-to is ugly
 
 
 Done:
+Make sure music loops
+can we get better outlines?
 arena spawns enemies
 player movement
 enemy movement
