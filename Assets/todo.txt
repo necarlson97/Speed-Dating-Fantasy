@@ -1,0 +1,13 @@
+Todo:
+player movement
+enemy movement
+bounce off sides
+total number of people seen in roladex 
+
+arena spawns enemies
+
+
+Later:
+
+
+Done:

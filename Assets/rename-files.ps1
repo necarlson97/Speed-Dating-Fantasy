@@ -24,28 +24,8 @@
 # }
 
 # Simmilar but slightly different goals here:
-# Get-ChildItem "./Resources/portraits" -Filter *.png | Foreach-Object {
-#     $oldFileName = $_.Basename
-
-#     # Replace some words
-#     $newFileName = $oldFileName.replace("fantasy_elf","elf")
-#     $newFileName = $newFileName.replace("fantasy_dwarf","dwarf")
-#     $newFileName = $newFileName.replace("devil_with_red_skin","devil")
-#     $newFileName = $newFileName.replace("orc_with_green_skin","orc")
-#     $newFileName = $newFileName.replace("zombie","undead")
-    
-#     $oldFile = "./Resources/portraits/" + $oldFileName + ".png"
-#     $newFile = "./Resources/portraits/" + $newFileName + ".png"
-#     echo $oldFile
-#     echo $newFile
-#     echo ""
-    
-#     Move-Item -Path $oldFile -Destination $newFile
-# }
-
-# Simmilar but slightly different goals here:
-Get-ChildItem ".\Resources\bio\" | Foreach-Object {
-    $oldFileName = ".\Resources\bio\" + $_.Basename + $_.Extension
+Get-ChildItem "./Resources/portraits" -Filter *.png | Foreach-Object {
+    $oldFileName = $_.Basename
 
     # Replace some words
     $newFileName = $oldFileName.replace("fantasy_elf","elf")
@@ -53,10 +33,31 @@ Get-ChildItem ".\Resources\bio\" | Foreach-Object {
     $newFileName = $newFileName.replace("devil_with_red_skin","devil")
     $newFileName = $newFileName.replace("orc_with_green_skin","orc")
     $newFileName = $newFileName.replace("zombie","undead")
-
-    echo "Old: $oldFileName"
-    echo $newFilename
+    $newFileName = $newFileName.replace("Fiersome","Fearsome")
+    
+    $oldFile = "./Resources/portraits/" + $oldFileName + ".png"
+    $newFile = "./Resources/portraits/" + $newFileName + ".png"
+    echo $oldFile
+    echo $newFile
     echo ""
-
-    Move-Item -Path $oldFileName -Destination $newFilename
+    
+    Move-Item -Path $oldFile -Destination $newFile
 }
+
+# Simmilar but slightly different goals here:
+# Get-ChildItem ".\Resources\bio\" | Foreach-Object {
+#     $oldFileName = ".\Resources\bio\" + $_.Basename + $_.Extension
+
+#     # Replace some words
+#     $newFileName = $oldFileName.replace("fantasy_elf","elf")
+#     $newFileName = $newFileName.replace("fantasy_dwarf","dwarf")
+#     $newFileName = $newFileName.replace("devil_with_red_skin","devil")
+#     $newFileName = $newFileName.replace("orc_with_green_skin","orc")
+#     $newFileName = $newFileName.replace("zombie","undead")
+
+#     echo "Old: $oldFileName"
+#     echo $newFilename
+#     echo ""
+
+#     Move-Item -Path $oldFileName -Destination $newFilename
+# }

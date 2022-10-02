@@ -11,14 +11,56 @@ public class CharacterScript {
     internal string bio;
     internal Texture2D portrait;
 
+    // Poor man's enums
+    List<string> allSpecies = new List<string>{
+        "minotaur", 
+        "undead", 
+        "fairy", 
+        "vampire", 
+        "devil", 
+        "angel", 
+        "dwarf", 
+        "elf", 
+        "werewolf", 
+        "orc", 
+    };
+    List<string> allJobs = new List<string>{
+        "soldier", 
+        "teacher",  
+        "sailor",  
+        "baker",  
+        "builder",  
+        "tailor",  
+        "musician",  
+        "merchant",  
+        "farmer",  
+        "mayor",  
+    };
+    List<string> allPersonalitiets = new List<string>{
+        "comedic", 
+        "serious", 
+        "kindly", 
+        "dasdardly", 
+        "artistic", 
+        "simple", 
+        "wise", 
+        "fearsome", 
+        "shy", 
+        "proud", 
+    };
+
     public CharacterScript(string name, string fileName) {
-        string[] words = fileName.Split('_');
+        string[] words = fileName.ToLower().Split('_');
         this.name = name;
         this.species = words[0];
         this.job = words[1];
         this.personality = words[2];
         this.portrait = CharacterCEOScript.LoadPortrait(fileName);
-        this.bio = CharacterCEOScript.LoadBio(fileName);
+        this.bio = CharacterCEOScript.LoadBio(fileName).Trim();
+
+        Debug.Assert(allSpecies.Contains(species), "Bad species: "+job+" for "+name);
+        Debug.Assert(allJobs.Contains(job), "Bad job: "+job+" for "+name);
+        Debug.Assert(allPersonalitiets.Contains(personality), "Bad personaliy: "+job+" for "+name);
     }
     // public CharacterScript(string name, string fileName, Iamge portrait) {
     //     string[] words = fileName.Split('_');

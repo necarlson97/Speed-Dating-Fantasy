@@ -1,5 +1,5 @@
 Rufeal angel_Baker_Kindly
-Kezef angel_Builder_Fiersome
+Kezef angel_Builder_Fearsome
 Ishim angel_Farmer_Artistic
 Inias angel_Mayor_Proud
 Dureal angel_Merchant_Simple
@@ -13,7 +13,7 @@ Sabaoth devil_Baker_Artistic
 Briggemig devil_Builder_Dasdardly
 Kanodoth devil_Farmer_Serious
 Brozgor devil_Mayor_Comedic
-Thaz'gi devil_Merchant_Fiersome
+Thaz'gi devil_Merchant_Fearsome
 Jorgik devil_Musician_Wise
 Ungron devil_Sailor_Proud
 Oran devil_Soldier_Simple
@@ -21,7 +21,7 @@ Tith'tox devil_Tailor_Shy
 Vog'thom devil_Teacher_Kindly
 
 G.Oremaster dwarf_Builder_Dasdardly
-H.Hammerjaw dwarf_Tailor_Fiersome
+H.Hammerjaw dwarf_Tailor_Fearsome
 D.Ashflayer dwarf_Baker_Artistic
 S.Frostmaker dwarf_Farmer_Serious
 G.Dimborn dwarf_Merchant_Shy
@@ -37,17 +37,17 @@ Nueleth elf_Farmer_Artistic
 Sazyre elf_Mayor_Serious
 Hamon elf_Merchant_Simple
 Sadira elf_Musician_Proud
-Yesanith elf_Sailor_Fiersome
+Yesanith elf_Sailor_Fearsome
 Erendriel elf_Soldier_Comedic
 Alosrin elf_Tailor_Dasdardly
 Sinaht elf_Teacher_Kindly
 
-Spidergriddle fairy_Musician_Fiersome
+Spidergriddle fairy_Musician_Fearsome
 Candleclover fairy_Farmer_Simple
 Gemdash fairy_Merchant_Kindly
 Cozypuff fairy_Soldier_Artistic
 Orangehop fairy_Sailor_Serious
-Honeyvalley fairy_Comedic_Mayor
+Honeyvalley fairy_Mayor_Comedic
 Leafflip fairy_Tailor_Wise
 Carrotshine fairy_Teacher_Shy
 Rainwood fairy_Builder_Dasdardly
@@ -55,7 +55,7 @@ Vanilladash fairy_Baker_Proud
 
 Stormbane minotaur_Sailor_Wise
 Swiftbody minotaur_Builder_Shy
-Braveheart minotaur_Baker_Fiersome
+Braveheart minotaur_Baker_Fearsome
 Keenpelt minotaur_Merchant_Dasdardly
 Steadyhorn minotaur_Mayor_Simple
 Stoutvigor minotaur_Tailor_Serious
@@ -72,7 +72,7 @@ Xugar orc_Merchant_Artistic
 Sogugh orc_Musician_Wise
 Burul orc_Sailor_Kindly
 Uraugh orc_Soldier_Serious
-Vubub orc_Teacher_Fiersome
+Vubub orc_Teacher_Fearsome
 Durbul orc_Tailor_Dasdardly
 
 Kragen vampire_Baker_Kindly
@@ -84,7 +84,7 @@ Vladimir vampire_Musician_Simple
 Horace vampire_Sailor_Comedic
 Merlin vampire_Soldier_Proud
 Deverell vampire_Tailor_Serious
-Zadimus vampire_Teacher_Fiersome
+Zadimus vampire_Teacher_Fearsome
 
 Ronric werewolf_Baker_Shy
 Bodford werewolf_Builder_Comedic
@@ -95,14 +95,14 @@ Alan werewolf_Musician_Artistic
 Lucian werewolf_Sailor_Dasdardly
 Ronnet werewolf_Soldier_Proud
 Owain werewolf_Tailor_Serious
-Nicholas werewolf_Teacher_Fiersome
+Nicholas werewolf_Teacher_Fearsome
 
 Madheart undead_Baker_Serious
 Hans-Jorg undead_Builder_Kindly
 Carlos undead_Mayor_Proud
 Devante undead_Farmer_Simple
 Matthieu undead_Merchant_Comedic
-Chase undead_Musician_Fiersome
+Chase undead_Musician_Fearsome
 Redgrave undead_Sailor_Dasdardly
 Mansfield undead_Soldier_Wise
 Lenard undead_Tailor_Shy

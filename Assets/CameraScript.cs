@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour {
 
+    public AudioClip buttonHit;
+
     Vector3 target;
     void Start() {
         target = transform.position;
@@ -11,10 +13,10 @@ public class CameraScript : MonoBehaviour {
     
     void Update() {
         // Smoothly move twoards desired area, snapping in place
-        if (Vector3.Distance(transform.position, target) < 0.5f) {
+        if (Vector3.Distance(transform.position, target) < 0.01f) {
             transform.position = target;
         } else {
-            var speed = Time.deltaTime * 2;
+            var speed = Time.deltaTime * 8;
             transform.position = Vector3.Lerp(transform.position, target, speed);
         }
         
@@ -37,10 +39,18 @@ public class CameraScript : MonoBehaviour {
         }
     }
 
-    internal void GoTo(string s) {
+    public void GoTo(string s) {
         // Go to a sepecific canvas
         target = GameObject.Find(s+" Canvas").transform.position;
         // Keep camera back
         target.z = -10;
+        PlayAudio(buttonHit);
+    }
+
+    public void PlayAudio(AudioClip c){
+        var source = GetComponentInChildren<AudioSource>();
+        source.pitch = Random.Range(0.9f, 1.1f);
+        source.clip = c;
+        source.Play();
     }
 }
